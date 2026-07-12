@@ -30,10 +30,10 @@ public class GetResidentDataRequest
     private String email;
     @NotBlank(message = "Resident Type is Required")
     private Resident.ResidentType residentType;
+
     public enum ResidentType {
         OWNER,
         TENANT
     }
-    private
-    List<Vehicle> vehicleList;
+    private List<Vehicle> vehicleList;
 }

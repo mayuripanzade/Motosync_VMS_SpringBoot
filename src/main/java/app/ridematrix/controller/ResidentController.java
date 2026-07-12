@@ -42,6 +42,7 @@ public class ResidentController
 
     @GetMapping("/getAllResident")
     @Operation(summary = "Get all resident details")
+
     public ResponseEntity<List<GetResidentDataRequest>> getAllResidents() {
         log.info("Fetching all residents");
 

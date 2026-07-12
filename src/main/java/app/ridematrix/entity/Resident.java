@@ -53,6 +53,7 @@ public class Resident {
         OWNER,
         TENANT
     }
+    
     //one to many mapping
     @OneToMany(mappedBy = "resident", cascade = CascadeType.ALL, orphanRemoval = true)
     @Valid

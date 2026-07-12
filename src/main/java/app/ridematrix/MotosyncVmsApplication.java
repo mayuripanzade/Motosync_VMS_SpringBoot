@@ -2,13 +2,14 @@ package app.ridematrix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 @EnableScheduling
-public class RideMatrixVmsApplication {
+public class MotosyncVmsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RideMatrixVmsApplication.class, args);
+		SpringApplication.run(MotosyncVmsApplication.class, args);
 	}
 }

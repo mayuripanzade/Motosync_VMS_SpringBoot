@@ -2476,3 +2476,65 @@ Action:
 
 Consider defining a bean of type 'app.ridematrix.repository.UserRepo' in your configuration.
 
+2026-07-12T11:04:28.332+05:30  INFO 7408 --- [RideMatrix_VMS] [main] app.ridematrix.MotosyncVmsApplication    : Starting MotosyncVmsApplication using Java 17.0.19 with PID 7408 (C:\Users\mayur\Desktop\Motosync_VMS_Project\Motosync_VMS_Project\Motosync_VMS_SpringBoot\target\classes started by mayur in C:\Users\mayur\Desktop\Motosync_VMS_Project\Motosync_VMS_Project\Motosync_VMS_SpringBoot)
+2026-07-12T11:04:28.336+05:30 DEBUG 7408 --- [RideMatrix_VMS] [main] app.ridematrix.MotosyncVmsApplication    : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-07-12T11:04:28.340+05:30  INFO 7408 --- [RideMatrix_VMS] [main] app.ridematrix.MotosyncVmsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T11:04:30.056+05:30  INFO 7408 --- [RideMatrix_VMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T11:04:30.070+05:30  INFO 7408 --- [RideMatrix_VMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T11:04:30.071+05:30  INFO 7408 --- [RideMatrix_VMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-12T11:04:30.151+05:30  INFO 7408 --- [RideMatrix_VMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T11:04:30.152+05:30  INFO 7408 --- [RideMatrix_VMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1731 ms
+2026-07-12T11:04:30.210+05:30  WARN 7408 --- [RideMatrix_VMS] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'customUserServiceImpl': Unsatisfied dependency expressed through field 'userRepository': No qualifying bean of type 'app.ridematrix.repository.UserRepo' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-07-12T11:04:30.212+05:30  INFO 7408 --- [RideMatrix_VMS] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-12T11:04:30.231+05:30  INFO 7408 --- [RideMatrix_VMS] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-12T11:04:30.248+05:30 ERROR 7408 --- [RideMatrix_VMS] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in app.ridematrix.serviceImpl.CustomUserServiceImpl required a bean of type 'app.ridematrix.repository.UserRepo' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'app.ridematrix.repository.UserRepo' in your configuration.
+
+2026-07-12T11:11:46.232+05:30  INFO 11992 --- [RideMatrix_VMS] [main] app.ridematrix.MotosyncVmsApplication    : Starting MotosyncVmsApplication using Java 17.0.19 with PID 11992 (C:\Users\mayur\Desktop\Motosync_VMS_Project\Motosync_VMS_Project\Motosync_VMS_SpringBoot\target\classes started by mayur in C:\Users\mayur\Desktop\Motosync_VMS_Project\Motosync_VMS_Project\Motosync_VMS_SpringBoot)
+2026-07-12T11:11:46.234+05:30 DEBUG 11992 --- [RideMatrix_VMS] [main] app.ridematrix.MotosyncVmsApplication    : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-07-12T11:11:46.236+05:30  INFO 11992 --- [RideMatrix_VMS] [main] app.ridematrix.MotosyncVmsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T11:11:47.760+05:30  INFO 11992 --- [RideMatrix_VMS] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T11:11:47.775+05:30  INFO 11992 --- [RideMatrix_VMS] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T11:11:47.775+05:30  INFO 11992 --- [RideMatrix_VMS] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-12T11:11:47.859+05:30  INFO 11992 --- [RideMatrix_VMS] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T11:11:47.859+05:30  INFO 11992 --- [RideMatrix_VMS] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1561 ms
+2026-07-12T11:11:47.919+05:30  WARN 11992 --- [RideMatrix_VMS] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'customUserServiceImpl': Unsatisfied dependency expressed through field 'userRepository': No qualifying bean of type 'app.ridematrix.repository.UserRepo' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-07-12T11:11:47.922+05:30  INFO 11992 --- [RideMatrix_VMS] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-12T11:11:47.938+05:30  INFO 11992 --- [RideMatrix_VMS] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-12T11:11:47.957+05:30 ERROR 11992 --- [RideMatrix_VMS] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in app.ridematrix.serviceImpl.CustomUserServiceImpl required a bean of type 'app.ridematrix.repository.UserRepo' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'app.ridematrix.repository.UserRepo' in your configuration.
+
